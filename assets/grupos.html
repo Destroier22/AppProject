@@ -3,12 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="css/grupos.css">
-    
-    <title>Grupos</title>
+    <title>Obreiros</title>
 </head>
 <body>
-    <script src="java script/grupos.js"></script>
+    <div class="login-box">
+        <h2>Cadastro de Grupos</h2>
+        <form>
+            <div class="user-box">
+                <input type="text" id="groupName" name="" required="">
+                <label>Nome Grupo</label>
+            </div>
+            <div class="user-box">
+                <input type="text" id="groupLeader" name="" required="">
+                <label>Líder do Grupo</label>
+            </div>
+            <div class="btn-cadastro">
+                <button onclick="cadastrar_grupo(); return false"><label>Cadastrar</label></button>
+            </div>
+            <div class="btn-retorna-menu">
+                <button onclick="retorna_menu(); return false"><label>Menu Inicial</label></button>
+            </div>
+        </form>
+    </div>
+    <script src="javascript/grupos.js"></script>
 </body>
 </html>
