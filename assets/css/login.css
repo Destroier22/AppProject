@@ -16,3 +16,98 @@ body {
     background-position: center; /*manter sempre no centro a imagem*/
     /*parei no minuto: 14:16 */
 }
+
+.container {
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    color: #fff;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(100px); /*dixar o fundo transparente*/
+}
+.container h1 {
+    font-size: 36px;
+    text-align: center;
+}
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0
+}
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background-color:     transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px ;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px; /*20 Em cima/ 45px direita/ 20px Em baixo / 20 esquerda*/ 
+}
+.input-box input::placeholder {
+    color: #fff;
+}
+.input-box i {
+    position: absolute;
+    right: 20px; /*Tudo para a direita e volta 20px*/
+    top: 50%;
+    transform: translateY(-50%);
+}
+.remember {
+    display: flex;
+    justify-content: space-between; /*space-between joga cada um para um lado*/
+    margin: -15px 0 15px;
+}
+/*
+1 Valor => margin: 20px - todos os lados
+2 valores => margin: 20px 30px - baixo e cima, dos lados
+3 valores => margin: 25px 0px 15px - cima, lados, baixo
+4 valores => margin 20px 30px 45px 25px - cima, direita, baixo, esquerda;
+*/
+.remember label input {
+    accent-color: #fff; /*cor do fundo quando a caixinha de opção é marcada*/
+    margin-right: 5px;
+}
+.remember a {
+    text-decoration: none;
+    color: #fff;
+}
+.remember a:hover {
+    text-decoration: underline; /*Só ficar underline quando passar o mouse em cima*/
+}
+.login {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    margin-top: 20px;
+}
+.login:hover {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: #fff;
+    transition: 0.5s; /*deixa a transição mais lenta*/
+}
+.register {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0px 15px;
+}
+.register a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register a:hover {
+    text-decoration: underline;
+}
